@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.header {
+  width: 100%;
+  min-height: 80px;
+  padding: 0 6%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+.about-page {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  min-height: 500px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 6%;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.description {
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  width: 140px;
+  height: 45px;
+  border: none;
+  background-color: #222;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box {
+  width: 300px;
+  height: 300px;
+  background-color: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.about-content {
+  width: 100%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  padding: 60px 6%;
+  gap: 80px;
+}
+
+.content-box {
+  flex: 1;
+  max-width: 500px;
+}
+
+.content-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.content-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.content-box ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.content-box li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .about-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 4%;
+  }
+
+  .navbar {
+    gap: 25px;
+  }
+
+  .hero {
+    gap: 30px;
+    padding: 50px 4%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .image-box {
+    width: 260px;
+    height: 260px;
+    font-size: 40px;
+  }
+
+  .about-content {
+    gap: 40px;
+    padding: 50px 4%;
+  }
+
+  .content-box h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 100px;
+    padding: 20px 30px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbar {
+    gap: 25px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 50px 30px;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .description {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .image-box {
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-content {
+    padding: 50px 30px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .content-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 40px 20px 60px;
+    gap: 40px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hero button {
+    width: 130px;
+    height: 42px;
+  }
+
+  .image-box {
+    width: 220px;
+    height: 220px;
+    font-size: 32px;
+  }
+
+  .about-content {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .content-box h2 {
+    font-size: 24px;
+  }
+
+  .content-box p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .content-box li {
+    font-size: 15px;
+  }
+}
